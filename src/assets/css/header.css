@@ -1,0 +1,45 @@
+.header
+{
+    background-color: var(--color-black);
+    padding: 10px 0;
+}
+
+/* .header .logo img
+{
+    width: 35%;
+    height: auto;
+} */
+
+.header .logo a
+{
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .nav
+{
+    float: right;
+    padding-top: 5px;
+}
+
+.header .nav ul
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.header .nav li a
+{
+    padding: 0 15px;
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+.header .nav li a:hover
+{
+    color: var(--color-red);
+    transition: 0.5s;
+    opacity: 0.5s;
+}

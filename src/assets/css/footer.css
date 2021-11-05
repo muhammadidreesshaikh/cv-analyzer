@@ -1,0 +1,51 @@
+.footer{
+    background-color: #191919;
+    padding: 3% 0 1% 0;
+    background-repeat: no-repeat;
+}
+
+.footer .first h3{
+    font-size: 17px;
+    color: var(--color-red);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer .first p{
+    font-size: 13px;
+    color:  var(--color-gry);
+}
+
+.footer .first ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer .first li{
+    padding-top: 9px;
+}
+
+.footer .first li a{
+    color:  var(--color-white);
+    font-size: 14px;
+}
+
+.footer .first li a:hover{
+    color:  var(--color-red);
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.footer .seprator{
+    width: 100%;
+    background-color: #ffffff1f;
+    height: 2px;
+    margin-top: 3%;
+}
+
+.footer .last p{
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    padding-top: 10px;
+}
