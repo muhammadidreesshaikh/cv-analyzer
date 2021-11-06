@@ -16,6 +16,10 @@
     color:  var(--color-gry);
 }
 
+.footer .first a.press{
+    font-size: 13px;
+}
+
 .footer .first ul{
     list-style: none;
     padding-left: 0;

@@ -1,0 +1,46 @@
+.login {
+  padding: 5% 0;
+}
+
+.login h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color:  var(--color-black);
+}
+
+.login .forgot-checkout .checkout label{ 
+    color:  var(--color-black);
+}
+
+.login .forgot-checkout .forgot-btn a {
+  font-weight: 600;
+  font-size: 16px;
+  float: right;
+  color: var(--color-red);
+}
+
+.login .login-btn a {
+  letter-spacing: 0.1px;
+}
+
+.login .new-account {
+  padding-top: 15%;
+  text-align: center;
+}
+
+.login .new-account span {
+  color:  var(--color-black);
+  font-size: 15px;
+}
+
+.login .new-account a {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 2px;
+  color: var(--color-red);
+}
+
+.form-group label.form-check-label {
+    color: var(--color-red);
+}

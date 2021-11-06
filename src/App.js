@@ -3,11 +3,13 @@ import './App.css';
 
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import Home from './components/Home';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
-import Login from './components/Login';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Login from './pages/auth/Login';
+import Signup from './pages/auth/Signup';
+import Forgetpassword from './pages/auth/Forgetpassword';
 
 import { 
   BrowserRouter as Router, 
@@ -30,6 +32,8 @@ function App() {
               <Route exact path='/about' component={About}></Route>
               <Route exact path='/contact' component={Contact}></Route>
               <Route exact path='/login' component={Login}></Route>
+              <Route exact path='/signup' component={Signup}></Route>
+              <Route exact path='/forgetpassword' component={Forgetpassword}></Route>
             </Switch>
           </div>
 

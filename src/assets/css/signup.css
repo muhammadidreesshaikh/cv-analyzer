@@ -1,0 +1,32 @@
+.signup {
+  padding: 5% 0;
+}
+
+.signup .login-btn a {
+  letter-spacing: 0.1px;
+}
+
+.signup h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color:  var(--color-black);
+}
+
+
+.signup .new-account {
+  padding-top: 15%;
+  text-align: center;
+}
+
+.signup .new-account span {
+  color:  var(--color-black);
+  font-size: 15px;
+}
+
+.signup .new-account a {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 2px;
+  color: var(--color-red);
+}

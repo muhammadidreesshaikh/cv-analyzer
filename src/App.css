@@ -1,8 +1,9 @@
 :root {
-  --color-red: #ab2424;
+  --color-red: #dc3545;
   --color-black: #020202;
   --color-gry: #c1c1c1;
   --color-white: #ffff;
+  --color-blue: #359f9f;
 }
 
 body
@@ -28,19 +29,21 @@ a{
   text-decoration: none !important;
 }
 
-.press {
-  border: 1px solid var(--color-white);
+.press{
+  border: 1px solid var(--color-red);
   border-radius: 5px;
   padding: 7px 13px;
-  font-size: 13px;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  font-size: 15px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .press:hover{
-  background-color: #ab2424;
-  border: 1px solid #ab2424;
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   opacity: 0.5s;
   transition: 0.5s;
   color:  var(--color-white);
