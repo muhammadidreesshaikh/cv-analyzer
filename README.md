@@ -11,6 +11,7 @@ npm install -g create-react-app
 npx create-react-app my-app
 
 # start the app
+npm install
 npm start
 
 # bootstrap link
