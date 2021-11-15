@@ -10,6 +10,11 @@ import Contact from './pages/Contact';
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Forgetpassword from './pages/auth/Forgetpassword';
+import Companylisting from './pages/company/Companylisting';
+import Createcompany from './pages/company/Createcompany';
+import Applyjob from './pages/job/Applyjob';
+import Createjob from './pages/job/Createjob';
+import Joblisting from './pages/job/Joblisting';
 
 import { 
   BrowserRouter as Router, 
@@ -34,6 +39,11 @@ function App() {
               <Route exact path='/login' component={Login}></Route>
               <Route exact path='/signup' component={Signup}></Route>
               <Route exact path='/forgetpassword' component={Forgetpassword}></Route>
+              <Route exact path='/companylisting' component={Companylisting}></Route>
+              <Route exact path='/createcompany' component={Createcompany}></Route>
+              <Route exact path='/applyjob' component={Applyjob}></Route>
+              <Route exact path='/createjob' component={Createjob}></Route>
+              <Route exact path='/joblisting' component={Joblisting}></Route>
             </Switch>
           </div>
 

@@ -23,6 +23,10 @@ function Header() {
                                     <li><Link to="/home">Home</Link></li>
                                     <li><Link to="/services">Services</Link></li>
                                     <li><Link to="/about">About</Link></li>
+
+                                    <li><Link to="/createcompany">Create Company</Link></li>
+                                    <li><Link to="/applyjob">Apply Job</Link></li>
+                                    <li><Link to="/createjob">Create Job</Link></li>
                                     <li><Link to="/contact">Contact</Link></li>
                                     <li><Link to="/login">Login</Link></li>
                                  </ul>
