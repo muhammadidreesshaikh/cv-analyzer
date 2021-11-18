@@ -2,17 +2,21 @@
   padding: 5% 0;
 }
 
-.signup .login-btn a {
-  letter-spacing: 0.1px;
+.signup .card {
+  padding: 30px 15px;
+  box-shadow: 1px 5px 5px #ebebeb;
 }
 
 .signup h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color:  var(--color-black);
 }
 
+.signup .signup-btn a {
+  letter-spacing: 0.1px;
+} 
 
 .signup .new-account {
   padding-top: 15%;

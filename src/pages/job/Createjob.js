@@ -27,41 +27,78 @@ class Createjob extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
 
-              <div className="col-12 col-md-8 col-lg-4">
-
-                <h2>Sign Up</h2>
+              <div className="col-12 col-md-8 col-lg-8">
+                <h2>Create Job</h2>
 
                 <form className="pt-5">
-                  <div className="form-group">
-                    <label>Full Name</label>
-                    <input type="name" class="form-control" placeholder="Full Name" formControlName="name"/>
-                  </div>
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="form-group">
+                        <label>Company Name</label>
+                        <input type="name" class="form-control" placeholder="Company Name" formControlName="name"/>
+                      </div>
+                    </div>
 
-                  <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" class="form-control" placeholder="Email" formControlName="email"/>
-                  </div>
+                    <div className="col-6">
+                      <div className="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email" formControlName="email"/>
+                      </div>
+                    </div>
 
-                  <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password" formControlName="password"/>
-                  </div>
+                    <div className="col-6">
+                      <div className="form-group">
+                        <label>Position</label>
+                        <input type="text" class="form-control" placeholder="Position" formControlName="text"/>
+                      </div>
+                    </div>
 
-                  <div className="form-group">
-                    <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Confirm Password" formControlName="password"/>
-                  </div>
+                    <div className="col-6">
+                      <label>On-site/Remote</label>
+                      <form>
+                        <select>
+                          <option>On-site</option>
+                          <option>Remote</option>
+                          <option>Hybird</option>
+                        </select>
+                      </form>
+                    </div>
 
-                  <div className="signup-btn">
-                    <a className="press d-block mt-4">Join Now</a>
+                    <div className="col-6">
+                      <label>Job Type</label>
+                      <form>
+                        <select>
+                          <option>Full Time</option>
+                          <option>Part Time</option>
+                          <option>Contract</option>
+                          <option>Internship</option>
+                        </select>
+                      </form>
+                    </div>
+
+                    <div className="col-12">
+                      <div class="mb-3">
+                        <label class="form-label pt-3">Skills</label>
+                        <textarea class="form-control" placeholder="Skills.." rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <div className="col-12">
+                      <div class="mb-3">
+                        <label class="form-label">Requirements</label>
+                        <textarea class="form-control" placeholder="Requirements.." rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <div className="col-12">
+                      <div className="job-btn">
+                        <a className="press">Create Job</a>
+                      </div>
+                    </div>
                   </div>
                 </form>
-
-                <div className="new-account">
-                  <span>Already have an Account?</span>
-                  <Link to="/login"> Sign in. </Link>
-                </div>
               </div>
+
             </div>
           </div>
         </div>

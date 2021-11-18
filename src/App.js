@@ -15,6 +15,8 @@ import Createcompany from './pages/company/Createcompany';
 import Applyjob from './pages/job/Applyjob';
 import Createjob from './pages/job/Createjob';
 import Joblisting from './pages/job/Joblisting';
+import Allcompanies from './pages/admin/Allcompanies';
+import Alljobs from './pages/admin/Alljobs';
 
 import { 
   BrowserRouter as Router, 
@@ -44,6 +46,8 @@ function App() {
               <Route exact path='/applyjob' component={Applyjob}></Route>
               <Route exact path='/createjob' component={Createjob}></Route>
               <Route exact path='/joblisting' component={Joblisting}></Route>
+              <Route exact path='/allcompanies' component={Allcompanies}></Route>
+              <Route exact path='/alljobs' component={Alljobs}></Route>
             </Switch>
           </div>
 

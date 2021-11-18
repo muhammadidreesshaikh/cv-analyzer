@@ -1,0 +1,21 @@
+.create-company {
+  padding: 30px 0;
+}
+
+.create-company h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.create-company .company-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.create-company .company-btn a {
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding: 7px 25px;
+}

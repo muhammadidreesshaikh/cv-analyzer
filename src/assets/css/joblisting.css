@@ -1,0 +1,7 @@
+.job-listing {
+  padding: 30px 0;
+}
+
+.job-listing table a {
+  cursor: pointer;
+}
