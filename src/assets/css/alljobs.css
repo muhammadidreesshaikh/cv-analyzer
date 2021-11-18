@@ -1,0 +1,7 @@
+.all-jobs {
+  padding: 30px 0;
+}
+
+.all-jobs table a {
+  cursor: pointer;
+}
