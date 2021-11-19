@@ -112,7 +112,7 @@ class Joblisting extends React.Component {
                           </span>
                         </div>
                         <div className="company-btn">
-                          <Link to="/menu" className="btn btn-primary">
+                          <Link to="/applyjob" className="btn btn-primary">
                             Apply Job
                           </Link>
                         </div>
@@ -121,6 +121,7 @@ class Joblisting extends React.Component {
                   </div>
                 );
               })}
+
             </div>
           </div>
         </div>

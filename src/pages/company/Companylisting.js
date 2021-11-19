@@ -46,7 +46,7 @@ let Data = [
   },
   {
     id: "6",
-    image: image6,
+    image: image5,
     name: "Makeen Software House",
     location: "Karachi, Pakistan",
   }
@@ -88,7 +88,7 @@ class Companylisting extends React.Component {
                         <h5>{item.name}</h5>
                         <p>{item.location}</p>
                         <div className="company-btn">
-                          <Link to="/menu" className="btn btn-primary">Company</Link>
+                          <Link to="/joblisting" className="btn btn-primary">View All Jobs</Link>
                         </div>
                       </div>
                     </div>
