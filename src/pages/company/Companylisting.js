@@ -46,16 +46,10 @@ let Data = [
   },
   {
     id: "6",
-    image: image5,
-    name: "Contour Soltution",
-    location: "Karachi, Pakistan",
-  },
-  {
-    id: "7",
     image: image6,
     name: "Makeen Software House",
     location: "Karachi, Pakistan",
-  },
+  }
 ];
 
 class Companylisting extends React.Component {
@@ -86,7 +80,7 @@ class Companylisting extends React.Component {
               {Data.map((item, i) => {
                 return (
 
-                  <div className="col-md-4" key={i}>
+                  <div className="col-4" key={i}>
                     <div className="card">
                       <img src={item.image} />
 
@@ -94,7 +88,7 @@ class Companylisting extends React.Component {
                         <h5>{item.name}</h5>
                         <p>{item.location}</p>
                         <div className="company-btn">
-                          <Link to="/menu" className="btn btn-primary">View All Companies</Link>
+                          <Link to="/menu" className="btn btn-primary">Company</Link>
                         </div>
                       </div>
                     </div>
