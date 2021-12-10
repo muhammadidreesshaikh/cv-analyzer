@@ -1,31 +1,54 @@
-import React from 'react';
-import '../assets/css/slider.css';
+import React from "react";
+import "../assets/css/slider.css";
+
+import image from "../assets/img/gif2.gif";
 
 class Slider extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props);
+    this.state = {
+      data: [],
+      loading: false,
+    };
+  }
 
-        this.state = {
-            data: [],
-            loading: false
-        };
-    } 
+  componentDidMount() {
+    console.log("Slider");
 
-    componentDidMount() {
-        console.log("Slider");
+    this.setState({
+      loading: true,
+    });
+  }
 
-        this.setState({
-            loading: true
-        });
-    }
+  render() {
+    return (
+      <div>
+        <div className="slider">
+          <div className="container">
+            <div className="row">
 
-    render() {
-        return(
-            <div>
-                <p>Slider Slider Slider</p>
+                <div className="col-6">
+                    <div className="heading">
+                        <h1>Welcome to your professional community</h1>
+
+                        <div className="slider-btn mt-5">
+                            <a className="press" href="#">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-6">
+                    <div className="image">
+                        <img src={image}/>
+                    </div>
+                </div>
+
             </div>
-        );
-    }
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 export default Slider;

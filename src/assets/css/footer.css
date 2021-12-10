@@ -49,7 +49,7 @@
 
 .footer .last p{
     text-align: center;
-    color: grey;
+    color: var(--color-gry);
     font-size: 13px;
     padding-top: 10px;
 }
