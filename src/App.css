@@ -1,7 +1,7 @@
 :root {
   --color-red: #dc3545;
   --color-black: #020202;
-  --color-gry: #c1c1c1;
+  --color-gry: #a7a7a7;
   --color-white: #ffff;
   --color-blue: #1580bf;
   --color-green: #198754;
@@ -30,6 +30,29 @@ a{
   text-decoration: none !important;
 }
 
+/* heading */
+.heading{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.heading h3{
+  font-size: 30px;
+  font-weight: 600;
+  color:  var(--color-black);
+}
+
+.heading .seprator{
+  width: 50px;
+  height: 4px;
+  border-radius: 10px;
+  background-color:  var(--color-red);
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+
+/* button */
 .press{
   border: 1px solid var(--color-red);
   border-radius: 5px;

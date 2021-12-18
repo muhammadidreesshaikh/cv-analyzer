@@ -1,0 +1,40 @@
+.careers{
+    padding: 30px 0;
+}
+
+.careers .main .card{
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.careers .main .card img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.careers .main .card h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.careers .main .card h6{
+    font-size: 15px;
+    padding-top: 7px;
+    color: var(--color-black);
+}
+
+.careers .main .card p{
+    padding-top: 7px;
+    font-size: 13px;
+    color: var(--color-gry);
+}
+
+.careers .main .card small{
+    padding-top: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-green);
+}

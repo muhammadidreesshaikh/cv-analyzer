@@ -9,8 +9,6 @@ import image2 from "../../assets/img/company2.jpg";
 import image3 from "../../assets/img/company3.jpg";
 import image4 from "../../assets/img/company4.jpg";
 import image5 from "../../assets/img/company5.jpg";
-import image6 from "../../assets/img/company.6.jpeg";
-
 
 // arary
 let Data = [

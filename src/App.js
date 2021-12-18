@@ -17,6 +17,7 @@ import Createjob from './pages/job/Createjob';
 import Joblisting from './pages/job/Joblisting';
 import Allcompanies from './pages/admin/Allcompanies';
 import Alljobs from './pages/admin/Alljobs';
+import Careers from './pages/Careers';
 
 import { 
   BrowserRouter as Router, 
@@ -48,6 +49,7 @@ function App() {
               <Route exact path='/joblisting' component={Joblisting}></Route>
               <Route exact path='/allcompanies' component={Allcompanies}></Route>
               <Route exact path='/alljobs' component={Alljobs}></Route>
+              <Route exact path='/careers' component={Careers}></Route>
             </Switch>
           </div>
 

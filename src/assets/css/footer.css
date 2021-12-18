@@ -29,7 +29,7 @@
     padding-top: 9px;
 }
 
-.footer .first li a{
+.footer .first a{
     color:  var(--color-white);
     font-size: 14px;
 }
