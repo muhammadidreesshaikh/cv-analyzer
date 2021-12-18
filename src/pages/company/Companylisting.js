@@ -88,7 +88,7 @@ class Companylisting extends React.Component {
                         <h5>{item.name}</h5>
                         <p>{item.location}</p>
                         <div className="company-btn">
-                          <Link to="/joblisting" className="btn btn-primary">View All Jobs</Link>
+                          <Link to="/joblisting" className="press">View All Jobs</Link>
                         </div>
                       </div>
                     </div>

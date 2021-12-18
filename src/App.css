@@ -31,11 +31,11 @@ a{
 }
 
 .press{
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-red);
   border-radius: 5px;
   padding: 7px 13px;
   font-size: 15px;
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
   color: var(--color-white);
   text-align: center;
   transition: 0.5s;

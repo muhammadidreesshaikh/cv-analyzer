@@ -111,12 +111,14 @@ class Joblisting extends React.Component {
                             <i class="fas fa-suitcase"></i> {item.role}
                           </span>
                         </div>
+
                         <div className="company-btn">
-                          <Link to="/applyjob" className="btn btn-primary">
+                          <Link to="/applyjob" className="press">
                             Apply Job
                           </Link>
                         </div>
                       </div>
+                      
                     </div>
                   </div>
                 );

@@ -14,7 +14,7 @@ function Header() {
                         <div className="col-4 col-md-4 col-lg-4">
                             <div className='logo'>
                                 {/* <img src={logo} /> */}
-                                <a href="#">Cv Analyzer</a>
+                                <Link to="/home">Cv Analyzer</Link>
                             </div>
                         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../assets/css/slider.css";
 
 import image from "../assets/img/gif2.gif";
@@ -33,7 +34,7 @@ class Slider extends React.Component {
                         <h1>Welcome to your professional community</h1>
 
                         <div className="slider-btn mt-5">
-                            <a className="press" href="#">Apply Now</a>
+                          <Link to="/applyjob" className="press">Apply Now</Link>
                         </div>
                     </div>
                 </div>

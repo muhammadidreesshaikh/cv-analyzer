@@ -28,15 +28,10 @@
   color: var(--color-gry);
 }
 
-.company-listing .card .card-body a{
-  font-size: 12px;
+.company-listing .card .card-body .company-btn{
   margin-top: 25px;
 }
 
-.company-listing .card .card-body a:hover{
-  background-color: var(--color-green);
-  border: 1px solid var(--color-green);
-  opacity: 0.5s;
-  transition: 0.5s;
-  color:  var(--color-white);
+.company-listing .card .card-body .company-btn .press{
+  font-size: 12px;
 }

@@ -24,11 +24,10 @@ function Footer() {
                                 <h3>COMPANY</h3>
                                 <ul>
                                     <li><a href="#">Our History</a></li>
-                                    <li><a href="#"> Investor Relations & Policies</a></li>
+                                    <li><a href="#">Investor Relations</a></li>
                                     <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Gift Cards</a></li>
-                                    <li><a href="#">Sale 30%</a></li>
-                                    <li><a href="#">Merchandise Store</a></li>
+                                    <li><a href="#">Our Policies</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
                                 </ul>
                             </div>
                         </div> 
@@ -40,8 +39,7 @@ function Footer() {
                                     <li><a href="#">Facebook</a></li>
                                     <li><a href="#">Instagram</a></li>
                                     <li><a href="#">Twitter</a></li>
-                                    <li><a href="#">Messenger</a></li>
-                                    <li><a href="#">Our App</a></li>
+                                    <li><a href="#">Linkedin</a></li>
                                     <li><a href="#">111-235-0101</a></li>
                                 </ul>
                             </div>

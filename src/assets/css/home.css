@@ -1,0 +1,199 @@
+/* selects */
+.selects{
+    background-color: var(--color-red);
+    padding: 20px 0;
+}
+
+.selects .card{
+    cursor: pointer;
+}
+
+.selects .card .card-body{
+    padding: 10px 15px;
+    outline: 0;
+}
+
+.selects .card a{
+    color: var(--color-black);
+    font-size: 15px;
+}
+
+.selects .card .card-body a:hover{
+    opacity: 0.5s;
+    transition: 0.5s;
+    color: var(--color-red);
+}
+
+.selects .card i{
+    color: var(--color-black);
+    float: right;
+    padding-top: 4px;
+}
+
+.selects .card .card-body i:hover{
+    opacity: 0.5s;
+    transition: 0.5s;
+    color: var(--color-red);
+}
+
+/* connect */
+.connect{
+    padding: 50px 0;
+}
+
+.connect .card{
+    text-align: center;
+}
+
+.connect .card .card-body{
+    padding: 30px;
+}
+
+.connect .card .card-body img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.connect .card .card-body h4{
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+/* find */
+.find{
+    padding: 50px 0;
+    background: var(--color-black);
+}
+
+.find .inner{
+    margin-top: 30px;
+}
+
+.find .inner h3{
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.find .chip a{
+    background: linear-gradient(77deg,#f5286e,#fc6d43);
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: var(--color-white);
+    margin: 10px 15px 0 0;
+}
+
+.find .chip a:hover{
+    opacity: 0.5s;
+    transition: 0.5s;
+    color: var(--color-black);
+}
+
+/* job-hiring */
+.job-hiring{
+    padding: 50px 0;
+}
+
+.job-hiring .image img{
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.job-hiring .inner{
+    margin-top: 30px;
+}
+
+.job-hiring .inner .form-group{
+    position: relative;
+}
+
+.job-hiring .inner h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.job-hiring .inner i{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 14px;
+    color: var(--color-gry);
+}
+
+.job-hiring .inner input{
+    padding-left: 40px;
+    outline: 0;
+}
+
+.job-hiring .post-btn{
+    font-size: 14px;
+}
+
+/* recommended */
+.recommended{
+    padding: 50px 0;
+    background: #b7653603;
+}
+.recommended h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.recommended .inner{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recommended .inner .card{
+    padding: 60px;
+    margin-top: 25px;
+    transition: transform 0.2s ease;
+    color: var(--color-red);
+}
+
+.recommended .inner .card:hover{
+    transform: scale(1.1);
+    color: var(--color-black);
+}
+
+.recommended .inner .card i{
+    font-size: 20px;
+}
+
+.recommended .inner .card h6{
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+/* post */
+.post{
+    padding: 50px 0;
+}
+
+.post .right{
+    margin-top: 50px;
+}
+
+.post .right h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.post .right .post-btn a{
+    font-size: 13px;
+}
+
+.post .image img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
