@@ -1,6 +1,9 @@
 import React from 'react';
 import '../assets/css/contact.css';
 
+// image
+import image from "../assets/img/contactus.gif";
+
 class Contact extends React.Component {
 
     constructor(props) {
@@ -23,73 +26,76 @@ class Contact extends React.Component {
     render() {
         return(
             <div>
-                <div className='contact'>
-                    <div className='container'>
-                        <div className='row'>
+                <div className="contact">
+                    <div className="container">
+                        <div className="row">
 
                             <div className="col-12">
                                 <div className="heading">
-                                    <h3>About</h3>
+                                    <h3>Contact Us</h3>
                                     <div className="seprator"></div>
                                 </div>
                             </div>
 
-                            <div className='col-12'>
-                                <div className='main'>
+                            <div className="col-7">
+                                <div className="main">
                                     <form>
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="name" class="form-control" placeholder="First Name"/>
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Your Name</label>
+                                                    <input type="name" class="form-control" placeholder="Your Name"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="name" class="form-control" placeholder="Last Name"/>
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Your Email</label>
+                                                    <input type="email" class="form-control" placeholder="Your Email"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>Enter Email</label>
-                                                <input type="email" class="form-control" placeholder="Enter Email"/>
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Subject</label>
+                                                    <input type="text" class="form-control" placeholder="Subject"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>Subject</label>
-                                                <input type="text" class="form-control" placeholder="Subject"/>
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Addess</label>
+                                                    <input type="text" class="form-control" placeholder="Addess"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>Contact</label>
-                                                <input type="number" class="form-control" placeholder="Contact"/>
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Contact</label>
+                                                    <input type="number" class="form-control" placeholder="Contact"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-6'>
-                                            <div class="form-group">
-                                                <label>Addess</label>
-                                                <input type="text" class="form-control" placeholder="Addess"/>
+                                            <div className="col-12">
+                                                <div class="form-group">
+                                                    <label>Message</label>
+                                                    <textarea class="form-control" rows="5" placeholder='Message..'></textarea>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className='col-12'>
-                                            <div class="form-group">
-                                                <label>Message</label>
-                                                <textarea class="form-control" rows="5" placeholder='Message..'></textarea>
+                                            <div className="col-12">
+                                                <div className='contact-btn'>
+                                                    <button type="submit" class="press">Submit</button>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div className='contact-btn'>
-                                            <button type="submit" class="press btn">Submit</button>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+
+                            <div className="col-5">
+                                <div className="image">
+                                    <img src={image}/>
                                 </div>
                             </div>
 
