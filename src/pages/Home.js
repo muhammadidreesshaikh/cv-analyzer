@@ -6,8 +6,11 @@ import "../assets/css/home.css";
 // image
 import image1 from "../assets/img/connect1.svg";
 import image2 from "../assets/img/connect2.svg";
-import image3 from "../assets/img/gif3.gif";
-import image4 from "../assets/img/job.svg";
+import image3 from "../assets/img/online1.jpg";
+import image4 from "../assets/img/online2.jpg";
+import image5 from "../assets/img/online3.jpg";
+import image6 from "../assets/img/job.svg";
+import image7 from "../assets/img/gif2.gif";
 
 class Home extends React.Component {
   constructor(props) {
@@ -71,6 +74,57 @@ class Home extends React.Component {
         </section>
 
         <section>
+          <div className="home-about">
+            <div className="container">
+              <div className="row">
+
+                <div className="col-5">
+                  <h3>About Us</h3>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                </div>
+
+                <div className="col-7">
+                  <div className="about-inner">
+                    <div className="row">
+
+                      <div className="col-6">
+                        <div className="card">
+                          <i class="far fa-address-card"></i>
+                          <h6>We Create Really Goood Cv's That Makes You Land The Job</h6>
+                        </div>
+                      </div>
+
+                      <div className="col-6">
+                        <div className="card">
+                          <i class="fas fa-rocket"></i>
+                          <h6>It Is Fast And Convinient To Use Our Service</h6>
+                        </div>
+                      </div>
+
+                      <div className="col-6">
+                        <div className="card">
+                          <i class="far fa-address-book"></i>
+                          <h6>We Have A Lot Nice Cv Templates</h6>
+                        </div>
+                      </div>
+
+                      <div className="col-6">
+                        <div className="card">
+                          <i class="fas fa-heart"></i>
+                          <h6>Ans Most Import Part, It Is Totally Free!</h6>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
           <div className="connect">
             <div className="container">
               <div className="row">
@@ -100,6 +154,51 @@ class Home extends React.Component {
                           Choose a topic to learn about
                         </Link>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="online">
+            <div className="container">
+              <div className="row">
+                
+                <div className="col-12">
+                  <h3>Online Cv Analyzer</h3>
+                </div>
+
+                <div className="col-12">
+                  <div className="inner">
+                    <div className="row">
+
+                      <div className="col-4">
+                        <div className="card">
+                          <img src={image3}/>
+                          <h6>Easy To Use</h6>
+                          <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                        </div>
+                      </div>
+
+                      <div className="col-4">
+                        <div className="card">
+                          <img src={image4}/>
+                          <h6>Make CV Online</h6>
+                          <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                        </div>
+                      </div>
+
+                      <div className="col-4">
+                        <div className="card">
+                          <img src={image5}/>
+                          <h6>Get Support 24/7</h6>
+                          <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -143,7 +242,7 @@ class Home extends React.Component {
               <div className="row">
                 <div className="col-7">
                   <div className="image">
-                    <img src={image4} />
+                    <img src={image6} />
                   </div>
                 </div>
 
@@ -264,20 +363,18 @@ class Home extends React.Component {
               <div className="row">
                 
                 <div className="col-6">
-                  <div className="image">
-                    <img src={image3} />
-                  </div>
-                </div>
-
-                <div className="col-6">
                   <div className="right">
                     <h1>Post your job for millions of people to see</h1>
 
                     <div className="post-btn mt-5">
-                      <Link to="/home" className="press">
-                        Post a job
-                      </Link>
+                      <Link to="/home" className="press">Post a job</Link>
                     </div>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div className="image">
+                    <img src={image7} />
                   </div>
                 </div>
 

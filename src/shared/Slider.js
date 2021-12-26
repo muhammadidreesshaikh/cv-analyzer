@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "../assets/css/slider.css";
 
-import image from "../assets/img/gif2.gif";
+import image from "../assets/img/slider-img1.jpg";
 
 class Slider extends React.Component {
   constructor(props) {
