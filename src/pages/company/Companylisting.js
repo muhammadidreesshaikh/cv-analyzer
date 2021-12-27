@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/css/companylisting.css";
+import "../../assets/css/company-listing.css";
 
 // image
 import image from "../../assets/img/company.jpg";

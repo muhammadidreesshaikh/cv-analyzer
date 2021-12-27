@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/forgetpassword.css";
+import "../../assets/css/forget-password.css";
 
 class Forgetpassword extends React.Component {
   constructor(props) {

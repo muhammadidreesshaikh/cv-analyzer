@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/alljobs.css";
+import "../../assets/css/all-jobs.css";
 
 class Alljobs extends React.Component {
   constructor(props) {

@@ -28,7 +28,7 @@ class Contact extends React.Component {
             <div>
                 <div className="contact">
                     <div className="container">
-                        <div className="row">
+                        <div className="row justify-content-center">
 
                             <div className="col-12">
                                 <div className="heading">
@@ -37,14 +37,21 @@ class Contact extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="col-7">
+                            <div className="col-9">
                                 <div className="main">
                                     <form>
                                         <div className="row">
                                             <div className="col-6">
                                                 <div class="form-group">
-                                                    <label>Your Name</label>
-                                                    <input type="name" class="form-control" placeholder="Your Name"/>
+                                                    <label>First Name</label>
+                                                    <input type="name" class="form-control" placeholder="First Name"/>
+                                                </div>
+                                            </div>
+
+                                            <div className="col-6">
+                                                <div class="form-group">
+                                                    <label>Last Name</label>
+                                                    <input type="name" class="form-control" placeholder="Last Name"/>
                                                 </div>
                                             </div>
 
@@ -90,12 +97,6 @@ class Contact extends React.Component {
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-
-                            <div className="col-5">
-                                <div className="image">
-                                    <img src={image}/>
                                 </div>
                             </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/allcompanies.css";
+import "../../assets/css/all-companies.css";
 
 class Allcompanies extends React.Component {
   constructor(props) {

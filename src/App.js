@@ -40,15 +40,15 @@ function App() {
               <Route exact path='/about' component={About}></Route>
               <Route exact path='/contact' component={Contact}></Route>
               <Route exact path='/login' component={Login}></Route>
-              <Route exact path='/signup' component={Signup}></Route>
-              <Route exact path='/forgetpassword' component={Forgetpassword}></Route>
-              <Route exact path='/companylisting' component={Companylisting}></Route>
-              <Route exact path='/createcompany' component={Createcompany}></Route>
-              <Route exact path='/applyjob' component={Applyjob}></Route>
-              <Route exact path='/createjob' component={Createjob}></Route>
-              <Route exact path='/joblisting' component={Joblisting}></Route>
-              <Route exact path='/allcompanies' component={Allcompanies}></Route>
-              <Route exact path='/alljobs' component={Alljobs}></Route>
+              <Route exact path='/sign-up' component={Signup}></Route>
+              <Route exact path='/forget-password' component={Forgetpassword}></Route>
+              <Route exact path='/company-listing' component={Companylisting}></Route>
+              <Route exact path='/create-company' component={Createcompany}></Route>
+              <Route exact path='/apply-job' component={Applyjob}></Route>
+              <Route exact path='/create-job' component={Createjob}></Route>
+              <Route exact path='/job-listing' component={Joblisting}></Route>
+              <Route exact path='/all-companies' component={Allcompanies}></Route>
+              <Route exact path='/all-jobs' component={Alljobs}></Route>
               <Route exact path='/careers' component={Careers}></Route>
             </Switch>
           </div>

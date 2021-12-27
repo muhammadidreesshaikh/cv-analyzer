@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/createcompany.css";
+import "../../assets/css/create-company.css";
 
 class Createcompany extends React.Component {
   constructor(props) {

@@ -1,23 +1,12 @@
 .contact{
     padding: 30px 0;
-    background-color: #fafafa;
 }
 
 .contact .main{
-    
+    margin-top: 30px;
 }
 
 .contact .main .contact-btn{
     margin-top: 20px;
-}
-
-.contact .image{
-    
-}
-
-.contact .image img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+    text-align: center;
 }

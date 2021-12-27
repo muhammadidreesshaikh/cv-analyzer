@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import "../../assets/css/createjob.css";
+// import { Link } from 'react-router-dom';
+import "../../assets/css/create-job.css";
 
 class Createjob extends React.Component {
   constructor(props) {
