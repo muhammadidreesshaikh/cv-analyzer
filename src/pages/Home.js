@@ -363,7 +363,7 @@ class Home extends React.Component {
               <div className="row">
                 
                 <div className="col-6">
-                  <div className="right">
+                  <div className="left">
                     <h1>Post your job for millions of people to see</h1>
 
                     <div className="post-btn mt-5">
@@ -375,6 +375,28 @@ class Home extends React.Component {
                 <div className="col-6">
                   <div className="image">
                     <img src={image7} />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="question">
+            <div className="container">
+              <div className="row">
+                
+                <div className="col-6">
+                  <div className="left">
+                    <h1>Still Have Any Question!</h1>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div className="post-btn">
+                    <Link to="/contact" className="press">Contact Us</Link>
                   </div>
                 </div>
 

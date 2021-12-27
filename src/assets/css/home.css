@@ -260,16 +260,16 @@
     padding: 50px 0;
 }
 
-.post .right{
+.post .left{
     margin-top: 50px;
 }
 
-.post .right h1{
+.post .left h1{
     font-size: 35px;
     font-weight: 600;
 }
 
-.post .right .post-btn a{
+.post .left .post-btn a{
     font-size: 14px;
 }
 
@@ -282,5 +282,25 @@
     height: auto;
     object-fit: cover;
     object-position: center;
+}
+
+/* question */
+.question{
+    padding: 30px 0;
+    background-color: #efefef;
+}
+
+.question .left h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.question .post-btn{
+    float: right;
+    margin-top: 3px;
+}
+
+.question .post-btn a{
+    font-size: 14px;
 }
 
