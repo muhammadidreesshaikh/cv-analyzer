@@ -3,17 +3,18 @@
 }
 
 .privacy-policies .content{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .privacy-policies .content h6{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
+    padding-top: 18px;
     color: var(--color-black);
 }
 
 .privacy-policies .content p{
     color: var(--color-gry);
     font-size: 14px;
-    padding-top: 15px;
+    padding-top: 7px;
 }
