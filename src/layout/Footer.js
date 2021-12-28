@@ -23,10 +23,10 @@ function Footer() {
                             <div className="first">
                                 <h3>COMPANY</h3>
                                 <ul>
-                                    <li><a href="#">Our History</a></li>
+                                    <li><a href="/our-history">Our History</a></li>
                                     <li><a href="/careers">Careers</a></li>
-                                    <li><a href="#">Our Policies</a></li>
-                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="/privacy-policies">Privacy Policies</a></li>
+                                    <li><a href="/terms-condition">Terms & Condition</a></li>
                                 </ul>
                             </div>
                         </div> 

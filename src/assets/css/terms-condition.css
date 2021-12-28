@@ -1,18 +1,18 @@
-.about{
+.terms-condition{
     padding: 30px 0;
 }
 
-.about .content{
+.terms-condition .content{
     margin-top: 20px;
 }
-/* 
-.about .content h6{
+
+.terms-condition .content h6{
     font-size: 17px;
     font-weight: 600;
     color: var(--color-black);
-} */
+}
 
-.about .content p{
+.terms-condition .content p{
     color: var(--color-gry);
     font-size: 14px;
     padding-top: 15px;
