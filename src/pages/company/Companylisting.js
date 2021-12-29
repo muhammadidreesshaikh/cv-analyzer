@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../assets/css/company-listing.css";
 
@@ -50,32 +50,47 @@ let Data = [
   }
 ];
 
-class Companylisting extends React.Component {
-  constructor(props) {
-    super(props);
+function Companylisting() {
 
-    this.state = {
-      data: [],
-      loading: false,
-    };
+  const [data, setData] = useState([]);
+  const [loading, SetLoading] = useState(false);
+
+  useEffect(() => {
+    getData();
+  },[]);
+
+  const getData = () => {
+    let respose = [
+      {
+        id: "1",
+        image: image,
+        name: "Tech Soltution",
+        location: "Karachi, Pakistan",
+      },
+      {
+        id: "2",
+        image: image1,
+        name: "Nature Tech",
+        location: "Karachi, Pakistan",
+      },
+      {
+        id: "3",
+        image: image2,
+        name: "Contour Software House",
+        location: "Karachi, Pakistan",
+      },
+    ]
+
+    setData(respose);
   }
 
-  componentDidMount() {
-    console.log("Companylisting");
-
-    this.setState({
-      loading: true,
-    });
-  }
-
-  render() {
     return (
       <div>
         <div className="company-listing">
           <div className="container">
             <div className="row">
 
-              {Data.map((item, i) => {
+              {data.map((item, i) => {
                 return (
 
                   <div className="col-4" key={i}>
@@ -86,7 +101,7 @@ class Companylisting extends React.Component {
                         <h5>{item.name}</h5>
                         <p>{item.location}</p>
                         <div className="company-btn">
-                          <Link to="/joblisting" className="press">View All Jobs</Link>
+                          <Link to="/job-listing" className="press">View All Jobs</Link>
                         </div>
                       </div>
                     </div>
@@ -100,6 +115,5 @@ class Companylisting extends React.Component {
         </div>
       </div>
     );
-  }
 }
 export default Companylisting;

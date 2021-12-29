@@ -257,7 +257,6 @@ class Home extends React.Component {
                           type="text"
                           class="form-control"
                           placeholder="Seacrh job titles"
-                          formControlName="text"
                         />
                       </div>
 
@@ -267,7 +266,6 @@ class Home extends React.Component {
                           type="text"
                           class="form-control"
                           placeholder="Company"
-                          formControlName="text"
                         />
                       </div>
 
@@ -277,7 +275,6 @@ class Home extends React.Component {
                           type="location"
                           class="form-control"
                           placeholder="Location"
-                          formControlName="location"
                         />
                       </div>
                     </form>

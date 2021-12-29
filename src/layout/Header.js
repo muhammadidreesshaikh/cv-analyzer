@@ -26,24 +26,24 @@ function Header() {
                                     <li><Link to="/about">About</Link></li>
 
                                     <div className="dropdown">
-                                        <button class="dropbtn">Admin</button>
-                                        <div class="dropdown-content">
+                                        <button className="dropbtn">Admin</button>
+                                        <div className="dropdown-content">
                                             <Link to="/allcompanies">All Companies</Link>
                                             <Link to="/alljobs">All Jobs</Link>
                                         </div>
                                     </div>
 
                                     <div className="dropdown">
-                                        <button class="dropbtn">Companies</button>
-                                        <div class="dropdown-content">
+                                        <button className="dropbtn">Companies</button>
+                                        <div className="dropdown-content">
                                             <Link to="/createcompany">Create Company</Link>
                                             <Link to="/companylisting">Company Listing</Link>
                                         </div>
                                     </div>
 
                                     <div className="dropdown">
-                                        <button class="dropbtn">Jobs</button>
-                                        <div class="dropdown-content">
+                                        <button className="dropbtn">Jobs</button>
+                                        <div className="dropdown-content">
                                             <Link to="/createjob">Create Job</Link>
                                             <Link to="/applyjob">Apply Job</Link>
                                             <Link to="/joblisting">Job Listing</Link>
