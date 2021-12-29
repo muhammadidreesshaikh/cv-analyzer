@@ -33,6 +33,9 @@ https://www.geeksforgeeks.org/reactjs-router/
 # npm axios
 https://alligator.io/react/axios-react/
 
+# API integration in ReactJS using Axios
+https://www.digitalocean.com/community/tutorials/react-axios-react
+
 # global config
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
