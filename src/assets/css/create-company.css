@@ -9,6 +9,22 @@
   color: var(--color-black);
 }
 
+.create-company .image{
+  margin-top: 30px;
+}
+
+.create-company .image img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 80px;
+  border: 1px solid #ced4da;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+}
+
 .create-company .company-btn {
   margin-top: 30px;
   text-align: center;

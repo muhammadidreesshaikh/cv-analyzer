@@ -28,25 +28,25 @@ function Header() {
                                     <div className="dropdown">
                                         <button className="dropbtn">Admin</button>
                                         <div className="dropdown-content">
-                                            <Link to="/allcompanies">All Companies</Link>
-                                            <Link to="/alljobs">All Jobs</Link>
+                                            <Link to="/all-companies">All Companies</Link>
+                                            <Link to="/all-jobs">All Jobs</Link>
                                         </div>
                                     </div>
 
                                     <div className="dropdown">
                                         <button className="dropbtn">Companies</button>
                                         <div className="dropdown-content">
-                                            <Link to="/createcompany">Create Company</Link>
-                                            <Link to="/companylisting">Company Listing</Link>
+                                            <Link to="/create-company">Create Company</Link>
+                                            <Link to="/company-listing">Company Listing</Link>
                                         </div>
                                     </div>
 
                                     <div className="dropdown">
                                         <button className="dropbtn">Jobs</button>
                                         <div className="dropdown-content">
-                                            <Link to="/createjob">Create Job</Link>
-                                            <Link to="/applyjob">Apply Job</Link>
-                                            <Link to="/joblisting">Job Listing</Link>
+                                            <Link to="/create-job">Create Job</Link>
+                                            <Link to="/apply-job">Apply Job</Link>
+                                            <Link to="/job-listing">Job Listing</Link>
                                         </div>
                                     </div>
 

@@ -7,6 +7,7 @@ import { config } from "../../core/config";
 function Createcompany() {
   const history = useHistory();
 
+  const [image, setImage] = useState('https://www.av.se/Static/images/placeholder.png');
   const [companyName, setCompanyName] = useState('');
   const [ownerName, setOwnerName] = useState('');
   const [email, setEmail] = useState('');
@@ -21,9 +22,10 @@ function Createcompany() {
 
   const register = () => {
     let data = {
+      image: image, 
       companyName: companyName, 
       ownerName: ownerName, 
-      email: email, 
+      email: email,
       website: website, 
       address: address, 
       phone: phoneNumber, 
@@ -51,54 +53,68 @@ function Createcompany() {
             <div className="col-12 col-md-8 col-lg-8">
               <h2>Create Company</h2>
 
+              <div className="col-12">
+                <div className="image">
+                  <img src={image} />
+                </div>
+              </div>
+
               <form className="pt-5">
                 <div className="row">
+                  
                   <div className="col-6">
                     <div className="form-group">
                       <label>Company Name</label>
-                      <input type="text" class="form-control" placeholder="Full Name" onChange={(event) => setCompanyName(event.target.value)} />
+                      <input type="text" className="form-control" placeholder="Full Name" onChange={(event) => setCompanyName(event.target.value)} />
+                    </div>
+                  </div>
+
+                  <div className="col-6">
+                    <div className="form-group">
+                      <label>Company Image</label>
+                      <input type="text" className="form-control" placeholder="Image URL" onChange={(event) => setImage(event.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-6">
                     <div className="form-group">
                       <label>Owner Name</label>
-                      <input type="text" class="form-control" placeholder="Owner Name" onChange={(event) => setOwnerName(event.target.value)} />
+                      <input type="text" className="form-control" placeholder="Owner Name" onChange={(event) => setOwnerName(event.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-6">
                     <div className="form-group">
                       <label>Email</label>
-                      <input type="email" class="form-control" placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
+                      <input type="email" className="form-control" placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-6">
                     <div className="form-group">
                       <label>Website</label>
-                      <input type="text" class="form-control" placeholder="Website" onChange={(event) => setWebsite(event.target.value)} />
+                      <input type="text" className="form-control" placeholder="Website" onChange={(event) => setWebsite(event.target.value)} />
                     </div>
                   </div>
 
-                  <div className="col-12">
+                  <div className="col-6">
                     <div className="form-group">
                       <label>Address</label>
-                      <input type="text" class="form-control" placeholder="Address" onChange={(event) => setAddress(event.target.value)} />
+                      <input type="text" className="form-control" placeholder="Address" onChange={(event) => setAddress(event.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-6">
                     <div className="form-group">
                       <label>Phone Number</label>
-                      <input type="number" class="form-control" placeholder="Phone Number" onChange={(event) => setPhoneNumber(event.target.value)} />
+                      <input type="number" className="form-control" placeholder="Phone Number" onChange={(event) => setPhoneNumber(event.target.value)} />
                     </div>
                   </div>
 
                   <div className="col-6">
                     <div className="form-group">
                       <label>City</label>
-                      <input type="text" class="form-control" placeholder="City" onChange={(event) => setCity(event.target.value)} />
+                      <input type="text" className="form-control" placeholder="City" onChange={(event) => setCity(event.target.value)} />
                     </div>
                   </div>
 
