@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/css/all-companies.css";
 
-class Allcompanies extends React.Component {
+class AllCompanies extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ class Allcompanies extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Allcompanies");
+    console.log("All Companies");
 
     this.setState({
       loading: true,
@@ -130,4 +130,4 @@ class Allcompanies extends React.Component {
     );
   }
 }
-export default Allcompanies;
+export default AllCompanies;
