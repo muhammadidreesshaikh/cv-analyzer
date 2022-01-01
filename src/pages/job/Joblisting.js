@@ -4,7 +4,7 @@ import "../../assets/css/job-listing.css";
 import axios from 'axios';
 import { config } from "../../core/config";
 
-function Joblisting () {
+function JobListing () {
   const [data, setData] = useState([]);
   const [loading, SetLoading] = useState(false);
 
@@ -71,4 +71,4 @@ function Joblisting () {
     </div>
   );
 }
-export default Joblisting;
+export default JobListing;

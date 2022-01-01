@@ -4,7 +4,7 @@ import axios from 'axios';
 import "../../assets/css/company-listing.css";
 import { config } from "../../core/config";
 
-function Companylisting() {
+function CompanyListing() {
   const [data, setData] = useState([]);
   const [loading, SetLoading] = useState(false);
 
@@ -60,4 +60,4 @@ function Companylisting() {
       </div>
     );
 }
-export default Companylisting;
+export default CompanyListing;

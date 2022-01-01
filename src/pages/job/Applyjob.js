@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/css/apply-job.css";
 
-class Applyjob extends React.Component {
+class ApplyJob extends React.Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +14,7 @@ class Applyjob extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Applyjob");
+    console.log("ApplyJob");
 
     this.setState({
       loading: true,
@@ -31,8 +31,16 @@ class Applyjob extends React.Component {
         <div className="apply-job">
           <div className="container">
             <div className="row justify-content-center">
+
+              <div className="col-12">
+                  <div className="heading">
+                      <h3>Apply Job</h3>
+                      <div className="seprator"></div>
+                  </div>
+              </div>
+
               <div className="col-12 col-md-8 col-lg-8">
-                <h2>Apply Job</h2>
+                {/* <h2>Apply Job</h2> */}
 
                 {!this.state.applyJob && (
                   <form className="pt-5">
@@ -163,4 +171,4 @@ class Applyjob extends React.Component {
     );
   }
 }
-export default Applyjob;
+export default ApplyJob;

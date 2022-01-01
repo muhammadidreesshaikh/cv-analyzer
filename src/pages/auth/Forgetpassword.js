@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/css/forget-password.css";
 
-class Forgetpassword extends React.Component {
+class ForgetPassword extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ class Forgetpassword extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Forgetpassword");
+    console.log("ForgetPassword");
 
     this.setState({
       loading: true,
@@ -53,4 +53,4 @@ class Forgetpassword extends React.Component {
     );
   }
 }
-export default Forgetpassword;
+export default ForgetPassword;

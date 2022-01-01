@@ -4,7 +4,7 @@ import "../../assets/css/create-company.css";
 import axios from 'axios';
 import { config } from "../../core/config";
 
-function Createcompany() {
+function CreateCompany() {
   const history = useHistory();
 
   const [image, setImage] = useState('https://www.av.se/Static/images/placeholder.png');
@@ -50,8 +50,15 @@ function Createcompany() {
         <div className="container">
           <div className="row justify-content-center">
 
+            <div className="col-12">
+                <div className="heading">
+                    <h3>Create Company</h3>
+                    <div className="seprator"></div>
+                </div>
+            </div>
+
             <div className="col-12 col-md-8 col-lg-8">
-              <h2>Create Company</h2>
+              {/* <h2>Create Company</h2> */}
 
               <div className="col-12">
                 <div className="image">
@@ -133,4 +140,4 @@ function Createcompany() {
     </div>
   );
 }
-export default Createcompany;
+export default CreateCompany;

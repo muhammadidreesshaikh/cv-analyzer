@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/css/sign-up.css";
 
-class Signup extends React.Component {
+class SignUp extends React.Component {
   constructor(props) {
     super(props);
 
@@ -13,7 +13,7 @@ class Signup extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Signup");
+    console.log("SignUp");
 
     this.setState({
       loading: true,
@@ -89,4 +89,4 @@ class Signup extends React.Component {
     );
   }
 }
-export default Signup;
+export default SignUp;
