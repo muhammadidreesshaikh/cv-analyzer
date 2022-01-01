@@ -40,8 +40,6 @@ class ApplyJob extends React.Component {
               </div>
 
               <div className="col-12 col-md-8 col-lg-8">
-                {/* <h2>Apply Job</h2> */}
-
                 {!this.state.applyJob && (
                   <form className="pt-5">
                     <div className="row">
@@ -52,7 +50,6 @@ class ApplyJob extends React.Component {
                             type="name"
                             class="form-control"
                             placeholder="First Name"
-                            formControlName="name"
                           />
                         </div>
                       </div>
@@ -64,7 +61,6 @@ class ApplyJob extends React.Component {
                             type="name"
                             class="form-control"
                             placeholder="Last Name"
-                            formControlName="name"
                           />
                         </div>
                       </div>
@@ -76,7 +72,6 @@ class ApplyJob extends React.Component {
                             type="email"
                             class="form-control"
                             placeholder="Email"
-                            formControlName="email"
                           />
                         </div>
                       </div>
@@ -88,7 +83,6 @@ class ApplyJob extends React.Component {
                             type="text"
                             class="form-control"
                             placeholder="Website"
-                            formControlName="text"
                           />
                         </div>
                       </div>
@@ -100,7 +94,6 @@ class ApplyJob extends React.Component {
                             type="number"
                             class="form-control"
                             placeholder="Phone Number"
-                            formControlName="number"
                           />
                         </div>
                       </div>
@@ -122,7 +115,7 @@ class ApplyJob extends React.Component {
                       <div className="col-6">
                         <div className="form-group">
                           <label>CV/Resume</label>
-                          <input type="file" formControlName="text" />
+                          <input type="file" />
                         </div>
                       </div>
 
@@ -153,10 +146,10 @@ class ApplyJob extends React.Component {
                     <div className="row justify-content-center">
                       <div className="col-6">
                         <div className="card mt-5">
-                          <h3>Thankyou for applying.</h3>
+                          <h3>Thankyou For Applying.</h3>
                           
                           <div className="screen-btn">
-                            <Link to="/joblisting" className="press">Back To Jobs</Link>
+                            <Link to="/job-listing" className="press">Back To Jobs</Link>
                           </div>
                         </div>
                       </div>

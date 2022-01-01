@@ -14,7 +14,7 @@ function Footer() {
                                 <p className="pt-2">Established too long ago that a reader will be distracted by a site's text content while looking at its design. The point of using that has a less normal distribution of the letters contrary to using texts such as.</p>
 
                                 <div className="pt-4">
-                                    <a className="press" href="#">Read More</a>
+                                    <a className="press" href="/home">Read More</a>
                                 </div>
                             </div>
                         </div>

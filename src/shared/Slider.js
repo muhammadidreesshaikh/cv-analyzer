@@ -34,7 +34,7 @@ class Slider extends React.Component {
                         <h1>Welcome to your professional community</h1>
 
                         <div className="slider-btn mt-5">
-                          <Link to="/applyjob" className="press">Apply Now</Link>
+                          <Link to="/apply-job" className="press">Apply Now</Link>
                         </div>
                     </div>
                 </div>

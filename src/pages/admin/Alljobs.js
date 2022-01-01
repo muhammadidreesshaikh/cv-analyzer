@@ -12,7 +12,7 @@ class AllJobs extends React.Component {
   }
 
   componentDidMount() {
-    console.log("AllJobs");
+    console.log("All Jobs");
 
     this.setState({
       loading: true,
