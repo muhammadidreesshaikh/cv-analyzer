@@ -14,7 +14,7 @@ class ForgetPassword extends React.Component {
   componentDidMount() {
     console.log("ForgetPassword");
 
-    this.setState({
+    this.setState({ 
       loading: true,
     });
   }

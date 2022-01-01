@@ -26,7 +26,7 @@ class ApplyJob extends React.Component {
   }
 
   render() {
-    return (
+    return ( 
       <div>
         <div className="apply-job">
           <div className="container">
@@ -144,7 +144,7 @@ class ApplyJob extends React.Component {
                 {this.state.applyJob && (
                   <div className="new-screen">
                     <div className="row justify-content-center">
-                      <div className="col-6">
+                      <div className="col-8">
                         <div className="card mt-5">
                           <h3>Thankyou For Applying.</h3>
                           
