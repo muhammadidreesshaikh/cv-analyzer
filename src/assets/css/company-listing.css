@@ -35,3 +35,11 @@
 .company-listing .card .card-body .company-btn .press{
   font-size: 12px;
 }
+
+.company-listing .card-body .company-btn .icons{
+  float: right;
+}
+
+.company-listing .card-body .company-btn .icons a{
+  cursor: pointer;
+}

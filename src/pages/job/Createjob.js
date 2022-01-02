@@ -59,7 +59,6 @@ function CreateJob() {
             </div>
 
             <div className="col-12 col-md-8 col-lg-8">
-              {/* <h2>Create Job</h2> */}
 
               <div className="col-12">
                 <div className="image">
@@ -136,7 +135,8 @@ function CreateJob() {
 
                   <div className="col-12">
                     <div className="job-btn">
-                      <a className="press" onClick={create}>Create Job</a>
+                      <a className="press mr-3" onClick={create}>Save</a>
+                      <a className="green" >Update</a>
                     </div>
                   </div>
                 </div>

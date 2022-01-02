@@ -58,7 +58,6 @@ function CreateCompany() {
             </div>
 
             <div className="col-12 col-md-8 col-lg-8">
-              {/* <h2>Create Company</h2> */}
 
               <div className="col-12">
                 <div className="image">
@@ -127,7 +126,8 @@ function CreateCompany() {
 
                   <div className="col-12">
                     <div className="company-btn">
-                      <a className="press" onClick={register}>Register Company</a>
+                      <a className="press mr-3" onClick={register}>Save</a>
+                      <a className="green">Update</a>
                     </div>
                   </div>
                 </div>

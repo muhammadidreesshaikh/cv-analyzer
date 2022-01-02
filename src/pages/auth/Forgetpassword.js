@@ -36,7 +36,6 @@ class ForgetPassword extends React.Component {
                         type="email"
                         class="form-control"
                         placeholder="Email"
-                        formControlName="email"
                       />
                     </div>
 

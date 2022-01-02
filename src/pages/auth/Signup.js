@@ -37,7 +37,6 @@ class SignUp extends React.Component {
                         type="name"
                         class="form-control"
                         placeholder="Full Name"
-                        formControlName="name"
                       />
                     </div>
 
@@ -47,7 +46,6 @@ class SignUp extends React.Component {
                         type="email"
                         class="form-control"
                         placeholder="Email"
-                        formControlName="email"
                       />
                     </div>
 
@@ -57,7 +55,6 @@ class SignUp extends React.Component {
                         type="password"
                         class="form-control"
                         placeholder="Password"
-                        formControlName="password"
                       />
                     </div>
 
@@ -67,16 +64,24 @@ class SignUp extends React.Component {
                         type="password"
                         class="form-control"
                         placeholder="Confirm Password"
-                        formControlName="password"
                       />
                     </div>
 
-                    <div className="signup-btn">
-                      <a className="press d-block mt-4">Join Now</a>
+                    <div class="form-check pt-2">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
+                      <label class="form-check-label" for="flexRadioDefault1">Join as a company</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+                      <label class="form-check-label" for="flexRadioDefault2">Join as a user</label>
+                    </div>
+
+                    <div className="signup-btn mt-5">
+                      <a className="press d-block">Join Now</a>
                     </div>
                   </form>
 
-                  <div className="new-account">
+                  <div className="new-account mt-4">
                     <span>Already have an Account?</span>
                     <Link to="/login"> Sign in. </Link>
                   </div>

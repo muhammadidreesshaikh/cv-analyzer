@@ -53,10 +53,13 @@ function JobListing () {
                         </span>
                       </div>
 
-                      <div className="company-btn">
-                        <Link to="/apply-job" className="press">
-                          Apply Job
-                        </Link>
+                      <div className="job-btn">
+                        <Link to="/apply-job" className="press">Apply Job</Link>
+
+                        <div className="icons">
+                            <a href="/create-job" className="far fa-edit mr-3 text-success"></a>
+                            <a className="fas fa-trash-alt text-danger"></a>
+                        </div>
                       </div>
                     </div>
                     

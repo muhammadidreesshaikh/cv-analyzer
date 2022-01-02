@@ -37,7 +37,6 @@ class Login extends React.Component {
                         type="email"
                         class="form-control"
                         placeholder="Email"
-                        formControlName="email"
                       />
                     </div>
 
@@ -47,7 +46,6 @@ class Login extends React.Component {
                         type="password"
                         class="form-control"
                         placeholder="Password"
-                        formControlName="password"
                       />
                     </div>
 
@@ -57,7 +55,6 @@ class Login extends React.Component {
                           <input
                             type="checkbox"
                             class="form-check-input"
-                            formControlName="rememberMe"
                           />
                           <label className="form-check-label">
                             Remember me
@@ -67,7 +64,7 @@ class Login extends React.Component {
 
                       <div className="col-6">
                         <div className="forgot-btn">
-                          <Link to="/forgetpassword">Forgot Password?</Link>
+                          <Link to="/forget-password">Forgot Password?</Link>
                         </div>
                       </div>
                     </div>
@@ -79,7 +76,7 @@ class Login extends React.Component {
 
                   <div className="new-account">
                     <span>Don't have an Account?</span>
-                    <Link to="/signup"> Join now. </Link>
+                    <Link to="/sign-up"> Join now. </Link>
                   </div>
                 </div>
               </div>

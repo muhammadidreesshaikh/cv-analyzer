@@ -46,6 +46,11 @@ function CompanyListing() {
                         <p>{item.address}, {item.city}</p>
                         <div className="company-btn">
                           <Link to="/job-listing" className="press">View All Jobs</Link>
+
+                          <div className="icons">
+                            <a href="/create-company" className="far fa-edit mr-3 text-success"></a>
+                            <a className="fas fa-trash-alt text-danger"></a>
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -51,11 +51,19 @@
   color: var(--color-gry);
 }
 
-.job-listing .card .card-body .company-btn{
+.job-listing .card .card-body .job-btn{
   margin-top: 25px;
 }
 
-.job-listing .card .card-body .company-btn .press{
+.job-listing .card .card-body .job-btn .press{
   font-size: 12px;
+}
+
+.job-listing .card-body .job-btn .icons{
+  float: right;
+}
+
+.job-listing .card-body .job-btn .icons a{
+  cursor: pointer;
 }
 

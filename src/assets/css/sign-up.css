@@ -1,5 +1,5 @@
 .signup {
-  padding: 5% 0;
+  padding: 60px 0;
 }
 
 .signup .card {
@@ -14,12 +14,16 @@
   color:  var(--color-black);
 }
 
+.signup .form-check label{
+  font-size: 14px;
+  /* color:  var(--color-gry); */
+} 
+
 .signup .signup-btn a {
   letter-spacing: 0.1px;
 } 
 
 .signup .new-account {
-  padding-top: 15%;
   text-align: center;
 }
 
