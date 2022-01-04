@@ -1,0 +1,40 @@
+.signup {
+  padding: 60px 0;
+}
+
+.signup .card {
+  padding: 30px 15px;
+  box-shadow: 1px 5px 5px #ebebeb;
+}
+
+.signup h2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color:  var(--color-black);
+}
+
+.signup .form-check label{
+  font-size: 14px;
+  /* color:  var(--color-gry); */
+} 
+
+.signup .signup-btn a {
+  letter-spacing: 0.1px;
+} 
+
+.signup .new-account {
+  text-align: center;
+}
+
+.signup .new-account span {
+  color:  var(--color-black);
+  font-size: 15px;
+}
+
+.signup .new-account a {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 2px;
+  color: var(--color-red);
+}

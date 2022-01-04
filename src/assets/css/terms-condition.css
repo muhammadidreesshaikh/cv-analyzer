@@ -1,0 +1,26 @@
+.terms-condition{
+    padding: 30px 0;
+}
+
+.terms-condition .content{
+    margin-top: 10px;
+}
+
+.terms-condition .content h6{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 18px;
+    color: var(--color-black);
+}
+
+.terms-condition .content p{
+    color: var(--color-gry);
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+.terms-condition .content span{
+    color: var(--color-blue);
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.our-history{
+    padding: 30px 0;
+}
+
+.our-history .content{
+    margin-top: 10px;
+}
+
+.our-history .content h6{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 18px;
+    color: var(--color-black);
+}
+
+.our-history .content p{
+    color: var(--color-gry);
+    font-size: 14px;
+    padding-top: 7px;
+}

@@ -1,0 +1,45 @@
+.company-listing {
+  padding: 30px 0;
+}
+
+.company-listing .card{
+  box-shadow: 1px 2px 5px #bfbfbf;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.company-listing .card img{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.company-listing .card .card-body h5{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.company-listing .card .card-body p{
+  padding-top: 5px;
+  font-size: 14px;
+  color: var(--color-gry);
+}
+
+.company-listing .card .card-body .company-btn{
+  margin-top: 25px;
+}
+
+.company-listing .card .card-body .company-btn .press{
+  font-size: 12px;
+}
+
+.company-listing .card-body .company-btn .icons{
+  float: right;
+}
+
+.company-listing .card-body .company-btn .icons a{
+  cursor: pointer;
+}
