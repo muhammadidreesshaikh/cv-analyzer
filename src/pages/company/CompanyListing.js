@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import axios from 'axios';
 import "../../assets/css/company-listing.css";
 import { config } from "../../core/config";
-import { dataService } from "../../shared/services/data.service";
+import dataService from "../../shared/services/data.service";
 
 function CompanyListing() {
   const history = useHistory();

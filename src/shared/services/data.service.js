@@ -1,9 +1,17 @@
-import { Subject } from 'rxjs';
+class dataService {
 
-const subject = new Subject();
+    constructor() {
+        this.data = {};
+    }
 
-export const dataService = {
-    setData: d => subject.next(d),
-    clearData: () => subject.next(),
-    getData: () => subject.asObservable()
-};
+    setData(data) {
+        this.data = data;
+        console.log("dataService >", data);
+    }
+
+    getData() {
+        return this.data;
+    }
+
+}
+export default new dataService;

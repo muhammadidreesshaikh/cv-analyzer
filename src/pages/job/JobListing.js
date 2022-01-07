@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../assets/css/job-listing.css";
 import axios from 'axios';
 import { config } from "../../core/config";
-import { dataService } from "../../shared/services/data.service";
+import dataService from "../../shared/services/data.service";
 
 function JobListing () {
   const [data, setData] = useState([]);
@@ -11,16 +11,16 @@ function JobListing () {
   const [companyId, SetCompanyId] = useState('');
 
   useEffect(() => {
-    let unmounted = false;
+    // dataService.getData().subscribe(res => {
+    //   let id = res;
 
-    dataService.getData().subscribe(res => {
-      let id = res;
+    //   // get jobs as per companyId
+    //   getData(id);
+    // });
 
-      // get jobs as per companyId
-      getData(id);
-    });
+    const id = dataService.getData();
+    getData(id);
 
-    return () => { unmounted = true };
   },[]);
 
   const getData = (id) => {
@@ -40,6 +40,14 @@ function JobListing () {
         console.log(response);
         console.log(data);
       })
+  }
+
+  const editJob = (id) => {
+    console.log("editJob >", id);
+  }
+
+  const deleteJob = (id) => {
+    console.log("deleteJob >", id);
   }
 
   return (
@@ -73,8 +81,8 @@ function JobListing () {
                           <Link to="/apply-job" className="press">Apply Job</Link>
   
                           <div className="icons">
-                              <a href="/create-job" className="far fa-edit mr-3 text-success"></a>
-                              <a className="fas fa-trash-alt text-danger"></a>
+                              <a className="far fa-edit mr-3 text-success" onClick={() => editJob(item._id)}></a>
+                              <a className="fas fa-trash-alt text-danger" onClick={() => deleteJob(item._id)}></a>
                           </div>
                         </div>
                       </div>
