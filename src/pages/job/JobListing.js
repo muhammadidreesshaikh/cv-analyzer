@@ -65,7 +65,7 @@ function JobListing () {
   
                       <div className="card-body">
                         <h4>{item.position}</h4>
-                        <h5>{item.companyId}</h5>
+                        {/* <h5>{item.companyId}</h5> */}
                         {/* <p>{item.location}</p> */}
   
                         <div className="time">
