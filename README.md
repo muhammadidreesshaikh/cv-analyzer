@@ -36,6 +36,9 @@ https://alligator.io/react/axios-react/
 # API integration in ReactJS using Axios
 https://www.digitalocean.com/community/tutorials/react-axios-react
 
+# Data Holding service mechanisms in reactjs
+https://medium.com/coding-in-depth/reactjs-share-data-between-the-components-de492b129086
+
 # global config
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com

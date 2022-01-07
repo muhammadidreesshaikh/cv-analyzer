@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../shared/Slider";
+import Slider from "../shared/components/Slider";
 import { Link } from "react-router-dom";
 import "../assets/css/home.css";
 

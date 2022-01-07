@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "../assets/css/slider.css";
+import "../../assets/css/slider.css";
 
-import image from "../assets/img/slider-img1.jpg";
+import image from "../../assets/img/slider-img1.jpg";
 
 class Slider extends React.Component {
   constructor(props) {

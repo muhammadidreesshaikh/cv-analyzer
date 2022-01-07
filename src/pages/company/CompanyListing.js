@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import axios from 'axios';
 import "../../assets/css/company-listing.css";
 import { config } from "../../core/config";
+import { dataService } from "../../shared/services/data.service";
 
 function CompanyListing() {
+  const history = useHistory();
+
   const [data, setData] = useState([]);
   const [loading, SetLoading] = useState(false);
 
@@ -28,6 +31,12 @@ function CompanyListing() {
       })
   }
 
+  const getJobListing = (companyId) => {
+    dataService.setData(companyId);
+    console.log(companyId);
+    history.push("/job-listing");
+  }
+
     return (
       <div>
         <div className="company-listing">
@@ -43,9 +52,9 @@ function CompanyListing() {
 
                       <div className="card-body">
                         <h5>{item.companyName}</h5>
-                        <p>{item.address}, {item.city}</p>
+                        <p className="text-truncate">{item.address}, {item.city}</p>
                         <div className="company-btn">
-                          <Link to="/job-listing" className="press">View All Jobs</Link>
+                          <a className="press" onClick={() => getJobListing(item._id)}>View All Jobs</a>
 
                           <div className="icons">
                             <a href="/create-company" className="far fa-edit mr-3 text-success"></a>
