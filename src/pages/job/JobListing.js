@@ -56,7 +56,7 @@ function JobListing () {
         <div className="container">
           <div className="row">
             {
-              data.length !== 0 ?
+              data.length !== 0 && loading !== true ?
               data.map((item, i) => {
                 return (
                   <div className="col-md-4" key={i}>
