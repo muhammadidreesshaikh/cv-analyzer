@@ -11,16 +11,8 @@ function JobListing () {
   const [companyId, SetCompanyId] = useState('');
 
   useEffect(() => {
-    // dataService.getData().subscribe(res => {
-    //   let id = res;
-
-    //   // get jobs as per companyId
-    //   getData(id);
-    // });
-
     const id = dataService.getData();
     getData(id);
-
   },[]);
 
   const getData = (id) => {
@@ -28,17 +20,8 @@ function JobListing () {
 
     axios.get(url)
       .then(res => {
-        // checking api response/data in console
-        console.log(res.data);
-
-        // getting data/response from API
         let response = res.data;
-
-        // storing response/data into state 
         setData(response);
-
-        console.log(response);
-        console.log(data);
       })
   }
 
