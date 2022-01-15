@@ -1,18 +1,58 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../../assets/css/apply-job.css";
+import axios from 'axios';
+import { config } from "../../core/config";
+import dataService from "../../shared/services/data.service";
 
 function ApplyJob () {
-  const [data, setData] = useState([]);
+  const history = useHistory();
+
+  const [data, setData] = useState({});
   const [loading, SetLoading] = useState(false);
   const [applyJob, SetApplyJob] = useState(false);
 
+  const [firstName, SetFirstName] = useState('');
+  const [lastName, SetLastName] = useState('');
+  const [email, SetEmail] = useState('');
+  const [website, SetWebsite] = useState('');
+  const [phoneNumber, SetPhoneNumber] = useState('');
+  const [resume, SetResume] = useState('');
+  const [cover, SetCover] = useState('');
+
   useEffect(() => {
-    console.log('ApplyJob');
+    const jobData = dataService.getData();
+    setData(jobData);
+    
+    if(Object.keys(jobData).length === 0) history.push("/company-listing");
   },[]);
 
   const onJobApply = () => {
     SetApplyJob(!applyJob);
+
+    let formData = {
+      "jobId": data._id,
+      "companyId": data.companyId,
+      "firstName": firstName,
+      "lastName": lastName,
+      "email": email,
+      "website": website,
+      "phone": phoneNumber,
+      "resumeURL": resume,
+      "cover": cover
+    }
+
+    let url = `${config.API_BASE_URL}/apply-jobs`;
+
+    axios.post(url, formData)
+    .then(res => {
+      SetApplyJob(!applyJob);
+      history.push("/company-listing");
+    })
+  }
+
+  const onResumeSelect = (event) => {
+    SetResume('www.sample.com/resume');
   }
 
   return ( 
@@ -37,8 +77,9 @@ function ApplyJob () {
                         <label>First Name</label>
                         <input
                           type="name"
-                          class="form-control"
+                          className="form-control"
                           placeholder="First Name"
+                          onChange={(event) => SetFirstName(event.target.value)} 
                         />
                       </div>
                     </div>
@@ -48,8 +89,9 @@ function ApplyJob () {
                         <label>Last Name</label>
                         <input
                           type="name"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Last Name"
+                          onChange={(event) => SetLastName(event.target.value)}
                         />
                       </div>
                     </div>
@@ -59,8 +101,9 @@ function ApplyJob () {
                         <label>Email</label>
                         <input
                           type="email"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Email"
+                          onChange={(event) => SetEmail(event.target.value)}
                         />
                       </div>
                     </div>
@@ -70,8 +113,9 @@ function ApplyJob () {
                         <label>Website</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Website"
+                          onChange={(event) => SetWebsite(event.target.value)}
                         />
                       </div>
                     </div>
@@ -81,40 +125,28 @@ function ApplyJob () {
                         <label>Phone Number</label>
                         <input
                           type="number"
-                          class="form-control"
+                          className="form-control"
                           placeholder="Phone Number"
+                          onChange={(event) => SetPhoneNumber(event.target.value)}
                         />
                       </div>
                     </div>
 
                     <div className="col-6">
-                      <label>Position</label>
-                      <form>
-                        <select>
-                          <option>Front-End Developer</option>
-                          <option>Node.js Developer</option>
-                          <option>Python Developer</option>
-                          <option>Ionic Developer</option>
-                          <option>JavaScript Developer</option>
-                          <option>React.js Developer</option>
-                        </select>
-                      </form>
-                    </div>
-
-                    <div className="col-6">
                       <div className="form-group">
                         <label>CV/Resume</label>
-                        <input type="file" />
+                        <input type="file" onChange={(event) => onResumeSelect(event)} />
                       </div>
                     </div>
 
                     <div className="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">Cover Letter</label>
+                      <div className="mb-3">
+                        <label className="form-label">Cover Letter</label>
                         <textarea
-                          class="form-control"
+                          className="form-control"
                           placeholder="Cover Letter Here.."
                           rows="5"
+                          onChange={(event) => SetCover(event.target.value)}
                         ></textarea>
                       </div>
                     </div>

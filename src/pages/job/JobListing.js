@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../../assets/css/job-listing.css";
 import axios from 'axios';
 import { config } from "../../core/config";
 import dataService from "../../shared/services/data.service";
 
 function JobListing () {
+  const history = useHistory();
+
   const [data, setData] = useState([]);
   const [loading, SetLoading] = useState(false);
   const [companyId, SetCompanyId] = useState('');
 
   useEffect(() => {
     const id = dataService.getData();
-    getData(id);
+    console.log('id', id);
+
+    if(Object.keys(id).length === 0) history.push("/company-listing");
+    else getData(id);
   },[]);
 
   const getData = (id) => {
@@ -31,6 +36,11 @@ function JobListing () {
 
   const deleteJob = (id) => {
     console.log("deleteJob >", id);
+  }
+
+  const applyJob = (data) => {
+    dataService.setData(data);
+    history.push("/apply-job");
   }
 
   return (
@@ -61,7 +71,7 @@ function JobListing () {
                         </div>
   
                         <div className="job-btn">
-                          <Link to="/apply-job" className="press">Apply Job</Link>
+                          <a className="press" onClick={() => applyJob(item)} >Apply Job</a>
   
                           <div className="icons">
                               <a className="far fa-edit mr-3 text-success" onClick={() => editJob(item._id)}></a>
