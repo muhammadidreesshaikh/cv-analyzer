@@ -55,6 +55,7 @@ function CompanyListing() {
                         <p className="text-truncate">{item.address}, {item.city}</p>
                         <div className="company-btn">
                           <a className="press" onClick={() => getJobListing(item._id)}>View All Jobs</a>
+                          <Link className="press ml-2" to="/selected-candidates">Candidates</Link>
 
                           <div className="icons">
                             <a href="/create-company" className="far fa-edit mr-3 text-success"></a>

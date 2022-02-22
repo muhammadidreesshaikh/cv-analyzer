@@ -45,8 +45,8 @@ function Header() {
                                         <button className="dropbtn">Jobs</button>
                                         <div className="dropdown-content">
                                             <Link to="/create-job">Create Job</Link>
-                                            <Link to="/apply-job">Apply Job</Link>
-                                            <Link to="/job-listing">Job Listing</Link>
+                                            <Link to="/company-listing">Apply Job</Link>
+                                            <Link to="/company-listing">Job Listing</Link>
                                         </div>
                                     </div>
 

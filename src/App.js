@@ -12,6 +12,7 @@ import SignUp from './pages/auth/Signup';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import CompanyListing from './pages/company/CompanyListing';
 import CreateCompany from './pages/company/CreateCompany';
+import SelectedCandidates from './pages/company/SelectedCandidates';
 import ApplyJob from './pages/job/ApplyJob';
 import CreateJob from './pages/job/CreateJob';
 import JobListing from './pages/job/JobListing';
@@ -47,6 +48,7 @@ function App() {
               <Route exact path='/forget-password' component={ForgetPassword}></Route>
               <Route exact path='/company-listing' component={CompanyListing}></Route>
               <Route exact path='/create-company' component={CreateCompany}></Route>
+              <Route exact path='/selected-candidates' component={SelectedCandidates}></Route>
               <Route exact path='/apply-job' component={ApplyJob}></Route>
               <Route exact path='/create-job' component={CreateJob}></Route>
               <Route exact path='/job-listing' component={JobListing}></Route>
