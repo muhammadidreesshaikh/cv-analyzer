@@ -80,7 +80,7 @@ function ApplyJob () {
   const getIqAnswers = (data) => {
     setIqPercentage(data);
 
-    // console.log('callback > parent > IqPercentage', iqPercentage);
+    console.log('callback > parent > IqPercentage', iqPercentage);
   }
 
   return ( 
