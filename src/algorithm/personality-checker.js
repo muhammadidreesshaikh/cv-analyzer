@@ -35,13 +35,13 @@ export const personalityCheck = (answers) => {
             percentage = percentage + 5;
         }
         if(answers.q2.includes(word)){
-            percentage = percentage + 10;
+            percentage = percentage + 5;
         }
         if(answers.q3.includes(word)){
-            percentage = percentage + 15;
+            percentage = percentage + 5;
         }
         if(answers.q4.includes(word)){
-            percentage = percentage + 20;
+            percentage = percentage + 5;
         }
         if(answers.q5.includes(word)){
             percentage = percentage + 5;

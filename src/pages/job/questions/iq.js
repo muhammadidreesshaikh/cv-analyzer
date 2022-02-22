@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { iqChecker } from "../../../algorithm/iq-checker";
 import { questions } from '../../../mock-data/iq-questions';
 
 function IqQuestions(props) {
@@ -36,8 +37,14 @@ function IqQuestions(props) {
             q5: q5
         }
 
-        // sending data to parent as a callback function
-        props.parentIqAnswers(answers);
+        console.log(answers);
+
+        // calculating percentage from algorithm
+        let percentage = iqChecker(answers);
+        console.log(percentage);
+
+        // sending calculated percentage from algorithm to parent as a callback function
+        props.parentIqAnswers(percentage);
     }
 
     return (

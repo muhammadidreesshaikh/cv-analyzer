@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { personalityCheck } from "../../../algorithm/personality-checker";
 import { questions } from '../../../mock-data/personality-questions';
 
 function Personality(props) {
@@ -36,8 +37,11 @@ function Personality(props) {
             q5: q5
         }
 
-        // sending data to parent as a callback function
-        props.parentPersonalityAnswers(answers);
+        // calculating percentage from algorithm
+        let percentage = personalityCheck(answers);
+
+        // sending calculated percentage from algorithm to parent as a callback function
+        props.parentPersonalityAnswers(percentage);
     }
 
     return (

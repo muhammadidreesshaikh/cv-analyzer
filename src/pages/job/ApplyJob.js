@@ -13,8 +13,8 @@ function ApplyJob () {
 
   const [stepCount, setStepCount] = useState(1);
   const [data, setData] = useState({});
-  const [personalityQuestions, setPersonalityQuestions] = useState({});
-  const [iqQuestions, setIqQuestions] = useState({});
+  const [personalityPercentage, setPersonalityPercentage] = useState({});
+  const [iqPercentage, setIqPercentage] = useState({});
   const [loading, SetLoading] = useState(false);
   const [applyJob, SetApplyJob] = useState(false);
 
@@ -72,15 +72,15 @@ function ApplyJob () {
   }
 
   const getPersonalityAnswers = (data) => {
-    setPersonalityQuestions(data);
+    setPersonalityPercentage(data);
 
-    console.log('callback > parent > PersonalityQuestions', personalityQuestions);
+    console.log('callback > parent > PersonalityPercentage', personalityPercentage);
   }
 
   const getIqAnswers = (data) => {
-    setIqQuestions(data);
+    setIqPercentage(data);
 
-    console.log('callback > parent > IqAnswers', iqQuestions);
+    // console.log('callback > parent > IqPercentage', iqPercentage);
   }
 
   return ( 

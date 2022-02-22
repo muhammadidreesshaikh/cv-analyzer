@@ -1,4 +1,4 @@
-import questions from '../mock-data/iq-questions';
+import { questions } from '../mock-data/iq-questions';
 
 export const iqChecker = (answers) => {
     let percentage = 0;
