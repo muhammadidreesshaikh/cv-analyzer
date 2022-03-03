@@ -8,7 +8,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/auth/Login';
-import SignUp from './pages/auth/Signup';
+import Signup from './pages/auth/Signup';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import CompanyListing from './pages/company/CompanyListing';
 import CreateCompany from './pages/company/CreateCompany';
@@ -44,7 +44,7 @@ function App() {
               <Route exact path='/about' component={About}></Route>
               <Route exact path='/contact' component={Contact}></Route>
               <Route exact path='/login' component={Login}></Route>
-              <Route exact path='/sign-up' component={SignUp}></Route>
+              <Route exact path='/sign-up' component={Signup}></Route>
               <Route exact path='/forget-password' component={ForgetPassword}></Route>
               <Route exact path='/company-listing' component={CompanyListing}></Route>
               <Route exact path='/create-company' component={CreateCompany}></Route>

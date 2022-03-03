@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/css/sign-up.css";
 
-function SignUp() {
+function Signup() {
 
   return (
     <div>
@@ -76,4 +76,4 @@ function SignUp() {
     </div>
   );
 }
-export default SignUp;
+export default Signup;
