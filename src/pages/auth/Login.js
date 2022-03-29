@@ -1,8 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import "../../assets/css/login.css";
+import axios from 'axios';
+import { config } from "../../core/config";
 
 function Login() {
+  const history = useHistory();
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [data, setData] = useState([]);
+
+  const login = () => {
+    let url = `${config.API_BASE_URL}/auth/login`;
+
+    let data = {
+      username: username,
+      password: password
+    }
+
+    axios.post(url, data)
+      .then(res => {
+        localStorage.setItem('access_token', res.data.access_token);
+
+        let data = JSON.parse(res.config.data);
+        localStorage.setItem('user', data.username);
+
+        history.push("/company-listing");
+      },
+      (error) => {
+        alert(error.message);
+      })
+  }
 
   return (
     <div>
@@ -20,6 +49,7 @@ function Login() {
                       type="email"
                       class="form-control"
                       placeholder="Email"
+                      onChange={(event) => setUsername(event.target.value)}
                     />
                   </div>
 
@@ -29,6 +59,7 @@ function Login() {
                       type="password"
                       class="form-control"
                       placeholder="Password"
+                      onChange={(event) => setPassword(event.target.value)}
                     />
                   </div>
 
@@ -53,7 +84,7 @@ function Login() {
                   </div>
 
                   <div className="login-btn">
-                    <a className="press d-block mt-3">Login</a>
+                    <a className="press d-block mt-3" onClick={login}>Login</a>
                   </div>
                 </form>
 
