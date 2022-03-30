@@ -21,12 +21,34 @@ function Login() {
 
     axios.post(url, data)
       .then(res => {
+        console.log(res);
         localStorage.setItem('access_token', res.data.access_token);
 
         let data = JSON.parse(res.config.data);
-        localStorage.setItem('user', data.username);
 
+        setUsername(data.username);
+        getUserData(username);
+      },
+      (error) => {
+        alert(error.message);
+      })
+  }
+
+  const getUserData = (email) => {
+    let url = `${config.API_BASE_URL}/users/getUserByEmail/${email}`;
+
+    axios.get(url, data)
+      .then(res => {
+        
+        let data = {
+          id: res.data._id,
+          username: res.data.username,
+          role: res.data.role
+        }
+
+        localStorage.setItem('user', JSON.stringify(data));
         history.push("/company-listing");
+        window.location.reload();
       },
       (error) => {
         alert(error.message);
