@@ -1,8 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import "../../assets/css/sign-up.css";
+import axios from 'axios';
+import { config } from "../../core/config";
 
 function Signup() {
+  const history = useHistory();
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [role, setRole] = useState('user');
+
+  const register = () => {
+    let url = `${config.API_BASE_URL}/users/signup`;
+
+    let data = {
+      username: username,
+      password: password,
+      role: role
+    }
+
+    console.log(data);
+
+    axios.post(url, data)
+      .then(res => {
+        alert('Account Successfully Created.')
+        history.push("/login");
+      },
+      (error) => {
+        alert(error.message);
+      })
+  }
 
   return (
     <div>
@@ -15,20 +43,12 @@ function Signup() {
 
                 <form className="pt-5">
                   <div className="form-group">
-                    <label>Full Name</label>
-                    <input
-                      type="name"
-                      class="form-control"
-                      placeholder="Full Name"
-                    />
-                  </div>
-
-                  <div className="form-group">
                     <label>Email</label>
                     <input
                       type="email"
                       class="form-control"
                       placeholder="Email"
+                      onChange={(event) => setUsername(event.target.value)}
                     />
                   </div>
 
@@ -38,29 +58,21 @@ function Signup() {
                       type="password"
                       class="form-control"
                       placeholder="Password"
+                      onChange={(event) => setPassword(event.target.value)}
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label>Confirm Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="Confirm Password"
-                    />
-                  </div>
-
-                  <div class="form-check pt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
-                    <label class="form-check-label" for="flexRadioDefault1">Join as a company</label>
-                  </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-                    <label class="form-check-label" for="flexRadioDefault2">Join as a user</label>
+                    <input class="form-check-input" type="radio" name="radios" value="user" checked onChange={(event) => setRole(event.target.value)}/>
+                    <label class="form-check-label">Join as a user</label>
+                  </div>
+                  <div class="form-check pt-2">
+                    <input class="form-check-input" type="radio" name="radios" value="company" onChange={(event) => setRole(event.target.value)} />
+                    <label class="form-check-label">Join as a company</label>
                   </div>
 
                   <div className="signup-btn mt-5">
-                    <a className="press d-block">Join Now</a>
+                    <a className="press d-block" onClick={register}>Join Now</a>
                   </div>
                 </form>
 
