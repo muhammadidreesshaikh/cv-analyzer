@@ -73,10 +73,10 @@ function JobListing () {
                         <div className="job-btn">
                           <a className="press" onClick={() => applyJob(item)} >Apply Job</a>
   
-                          <div className="icons">
+                          {/* <div className="icons">
                               <a className="far fa-edit mr-3 text-success" onClick={() => editJob(item._id)}></a>
                               <a className="fas fa-trash-alt text-danger" onClick={() => deleteJob(item._id)}></a>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       

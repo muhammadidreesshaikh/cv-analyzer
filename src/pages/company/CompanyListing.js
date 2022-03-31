@@ -57,10 +57,10 @@ function CompanyListing() {
                           <a className="press" onClick={() => getJobListing(item._id)}>View All Jobs</a>
                           <Link className="press ml-2" to="/selected-candidates">Candidates</Link>
 
-                          <div className="icons">
+                          {/* <div className="icons">
                             <a href="/create-company" className="far fa-edit mr-3 text-success"></a>
                             <a className="fas fa-trash-alt text-danger"></a>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>

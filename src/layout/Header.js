@@ -48,13 +48,13 @@ function Header() {
                                     {
                                         data?.username ?
                                         <div>
-                                            <div className="dropdown">
+                                            {/* <div className="dropdown">
                                                 <button className="dropbtn">Admin</button>
                                                 <div className="dropdown-content">
                                                     <Link to="/all-companies">All Companies</Link>
                                                     <Link to="/all-jobs">All Jobs</Link>
                                                 </div>
-                                            </div>
+                                            </div> */}
 
                                             <div className="dropdown">
                                                 <button className="dropbtn">Companies</button>
