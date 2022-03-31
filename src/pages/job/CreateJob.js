@@ -11,8 +11,8 @@ function CreateJob() {
   const [companyId, setcompanyId] = useState('');
   const [email, setemail] = useState('');
   const [position, setposition] = useState('');
-  const [remoteOrOnsite, setremoteOrOnsite] = useState('');
-  const [jobType, setjobType] = useState('');
+  const [remoteOrOnsite, setremoteOrOnsite] = useState('On-site');
+  const [jobType, setjobType] = useState('Full Time');
   const [skills, setskills] = useState('');
   const [requirements, setrequirements] = useState('');
 
@@ -136,7 +136,7 @@ function CreateJob() {
                   <div className="col-12">
                     <div className="job-btn">
                       <a className="press mr-3" onClick={create}>Save</a>
-                      <a className="green" >Update</a>
+                      {/* <a className="green" >Update</a> */}
                     </div>
                   </div>
                 </div>

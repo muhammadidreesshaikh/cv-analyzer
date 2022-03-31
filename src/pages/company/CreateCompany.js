@@ -127,7 +127,7 @@ function CreateCompany() {
                   <div className="col-12">
                     <div className="company-btn">
                       <a className="press mr-3" onClick={register}>Save</a>
-                      <a className="green">Update</a>
+                      {/* <a className="green">Update</a> */}
                     </div>
                   </div>
                 </div>
