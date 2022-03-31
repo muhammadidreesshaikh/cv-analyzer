@@ -80,7 +80,7 @@ function Header() {
                                     <li><Link to="/contact">Contact</Link></li>
 
                                     {
-                                        data?.username ? <li><Link onClick={logout}>Logout</Link></li> : <li><Link to="/login">Login</Link></li>
+                                        data?.username ? <li><Link to="/login" onClick={logout}>Logout</Link></li> : <li><Link to="/login">Login</Link></li>
                                     }
                                     
                                  </ul>
