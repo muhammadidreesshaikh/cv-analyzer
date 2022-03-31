@@ -12,6 +12,12 @@ function CompanyListing() {
   const [loading, SetLoading] = useState(false);
 
   useEffect(() => {
+    let data = JSON.parse(localStorage.getItem('user'));
+
+    if (!data?.username) {
+      history.push("/login");
+    }
+
     getData();
   },[]);
 

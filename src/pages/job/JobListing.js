@@ -13,6 +13,12 @@ function JobListing () {
   const [companyId, SetCompanyId] = useState('');
 
   useEffect(() => {
+    let data = JSON.parse(localStorage.getItem('user'));
+    
+    if (!data?.username) {
+      history.push("/login");
+    }
+
     const id = dataService.getData();
     console.log('id', id);
 
